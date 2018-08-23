@@ -1,0 +1,914 @@
+/*//---------------------------------- CSS CHUNG ----------------------------------\\*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+.bg-color-purple{
+	background-color: #f1b765;
+}
+
+.bg-color-blue{
+	background-color: #1e224d;
+}
+
+.border-radius{
+	border-radius: 5px;
+}
+
+.color-purple{
+	color: #f1b765;
+}
+
+.content-wrapper {
+	width:340px;
+	margin: 0 auto;
+}
+
+.image-box-model img{
+	width: 100%;
+	object-fit: cover;
+	transition: 1s;
+}
+
+.boder-line{
+	border-top: 1.5px solid #e0e0e0;
+	margin: 0;
+}
+
+.boder-line-thin{
+	border-top: 1px solid #e0e0e0;
+	margin: 0;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.text-content{
+	font-size: 11px;
+}
+
+.text-title{
+	font-size: 14px;
+}
+
+.margin-model{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header-title{
+	font-size: 19px;
+	color: white;
+	font-weight: 600;
+}
+
+.title-page-content{
+	border-bottom: 3px solid #f1b765;
+	display: inline-block;
+}
+
+@media (min-width: 576px) {
+	.content-wrapper {
+		width:540px;
+	}
+	.text-content{
+		font-size: 12px;
+	}
+	.text-title{
+		font-size: 15px;
+	}
+	.header-title{
+		font-size: 35px;
+	}
+	.margin-model{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.content-wrapper {
+		width:720px;
+	}
+	.text-content{
+		font-size: 13px;
+	}
+	.text-title{
+		font-size: 16px;
+	}
+	.header-title{
+		font-size: 38px;
+	}
+	.margin-model{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.content-wrapper {
+		width:960px;
+	}
+	.text-content{
+		font-size: 14px;
+	}
+	.text-title{
+		font-size: 17px;
+	}
+	.header-title{
+		font-size: 43px;
+		margin-bottom: 20px;
+	}
+	.margin-model{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.content-wrapper {
+		width:1000px;
+	}
+	.text-content{
+		font-size: 15px;
+	}
+	.text-title{
+		font-size: 18px;
+	}
+	.header-title{
+		font-size: 48px;
+	}
+	.margin-model{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+}
+
+/*//CUSTOM BUTTON\\*/
+.btn-custom{
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+	transition: .4s!important;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-custom:focus{
+	outline: none;
+}
+
+.btn-custom:hover{
+	transition: .4s!important;
+}
+
+.btn-transparent{
+	border-color: white;
+	background-color: transparent;
+}
+.btn-transparent:hover{
+	background-color: white;
+	color: #f1b765;
+}
+
+.btn-purple{
+	/*border-color: #753d9d;*/
+	border-color: #f1b765;
+	/*background-color: #753d9d;*/
+	background-color: #f1b765;
+}
+.btn-purple:hover{
+	background-color: white;
+	border-color: white;
+	color: #f1b765;
+}
+
+[class|="col"] {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0;
+}
+/*\\CUSTOM BUTTON//*/
+
+
+/*\\---------------------------------- CSS CHUNG ----------------------------------//*/
+
+
+/*//---------------------------------- HEADER ----------------------------------\\*/
+header{
+	position: relative;
+}
+.row.navbar-wrapper{
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 20;
+	margin: 0;
+	transform: translateX(-50%);
+	z-index: 100;
+	transition: .4s;
+	width: 100vw;
+}
+.row.navbar-wrapper.scroll{
+	position: fixed;
+	background-color: #232A31;
+	width: 100vw;
+	height: 90px;
+	transition: .4s;s
+}
+
+.row.navbar-wrapper.scroll .nav-link{
+	color: white!important;
+	transition: .4s;
+}
+.navbar{
+	background-color: transparent;
+	padding: 0;
+	padding-top: 8px;
+}
+.navbar .navbar-brand img{
+	width: 70px;
+}
+.navbar-toggler{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	padding: 0px 5px;
+}
+.navbar-toggler:focus{
+	outline: none;
+}
+.navbar-nav{
+	background-color: #0d113d;
+	padding: 5px 15px;
+}
+.navbar-nav .nav-item .nav-link{
+	outline: none;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 3px;	
+
+}
+.navbar-nav .nav-item.active .nav-link{
+	color: white;
+}
+.dropdown-menu{
+	background-color: #0d113d;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.dropdown-item{
+	color: #CCCCCC;
+	text-transform: uppercase;
+	padding: 4px 15px;
+}
+.btn-custom{
+	padding: 3px 0;
+	width: 100px;
+}
+.btn-header-wrapper .btn-custom{
+	margin: 0 4px;		
+}
+
+.bh-header-sub-page{
+	height: 300px;
+	position: relative;
+}
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.navbar .navbar-brand img{
+		width: 90px;
+	}
+	.navbar-nav .nav-item .nav-link{
+		transition: .4s;
+	}
+	.navbar-nav .nav-item.active .nav-link,
+	.navbar-nav .nav-item .nav-link:hover{
+		color: white;
+		background-color: #f1b765;
+		transition: .4s;
+	}
+	.dropdown-item{
+		padding: 4px 30px;
+	}
+	.btn-custom{
+		padding: 5px 5px;
+		width: 130px;
+	}
+	.btn-header-wrapper .btn-custom{
+		margin: 0 5px;		
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.navbar-nav{
+		background-color: transparent;
+		padding: 0;
+	}
+	.navbar-nav .nav-item .nav-link{
+		width: 90px;
+	}
+	.dropdown-menu{
+		padding: 6px 0;
+	}
+	.dropdown-item{
+		padding-left: 15px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.navbar .navbar-brand img{
+		width: 110px;
+	}
+	.navbar-nav .nav-item .nav-link{
+		font-size: 13px;
+		letter-spacing: .4px;
+		width: 110px;
+	}
+	.dropdown-menu{
+		padding: 10px 0;
+	}
+	.dropdown-item{
+		padding: 4px;
+		padding-left: 17px;
+	}
+	.btn-custom{
+		padding: 7px 0;
+		width: 150px;
+	}
+	.btn-header-wrapper .btn-custom{
+		margin: 0 7px;
+		margin-top: 15px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.navbar .navbar-brand img{
+		width: 120px;
+	}
+	.btn-custom{
+		padding: 9px 0;
+		width: 160px;
+	}
+	.btn-header-wrapper .btn-custom{
+		margin: 0 10px;
+	}
+}
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- HEADER ----------------------------------//*/
+
+/*//---------------------------------- SLOGAN ----------------------------------\\*/
+.slogan-wrapper{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url("../images/bg_slogan.jpg");
+}
+.solgan-overlay{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.solgan-overlay > *{
+	margin: 20px 0;
+}
+.slogan-title{
+	font-size: 20px;
+	font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+.time-entry {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    line-height: 22px
+}
+
+.time-entry span {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px
+}
+
+.countdown .time-count .time-entry {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 115px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    background: rgba(255,255,255,.25);
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 5px 50px -10px #000;
+}
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.slogan-title{
+		font-size: 30px;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.slogan-title{
+		font-size: 40px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.slogan-title{
+		font-size:50px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+/*\\---------------------------------- SLOGAN ----------------------------------//*/
+
+
+
+/*//---------------------------------- DESTINATION ----------------------------------\\*/
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > button {
+	font-size: 15px;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	width: 100%;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure button {
+	margin: 0;
+}
+
+.grid figure button {
+	letter-spacing: 1px;
+	font-size: 60%;
+	text-align: center;
+	cursor: pointer;
+	padding: 3px 7px;
+	width: auto;
+	outline: none;
+}
+
+
+.services-wrapper .grid figure {
+	width: 32%;
+	margin-right: 2%;
+}
+
+.services-wrapper .grid figure:nth-child(3n){
+	margin-right: 0;
+}
+.services-wrapper .grid figure img{
+	height: 270px;
+}
+/*---------------*/
+/***** Roxy *****/
+/*---------------*/
+
+
+figure.effect-roxy {
+	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+figure.effect-roxy img {
+	max-width: none;
+	width: -webkit-calc(100% + 60px);
+	width: calc(100% + 60px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50px,0,0);
+	transform: translate3d(-50px,0,0);
+}
+
+figure.effect-roxy figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-20px,0,0);
+	transform: translate3d(-20px,0,0);
+}
+
+figure.effect-roxy figcaption {
+	padding: 3em;
+	text-align: left;
+}
+
+figure.effect-roxy h2 {
+	padding-top: 10%;
+	border-bottom: 2px solid white;
+	text-align: center;
+}
+
+figure.effect-roxy button {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+}
+
+figure.effect-roxy:hover img {
+	opacity: 0.5;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-roxy:hover figcaption::before,
+figure.effect-roxy:hover button {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+/*---------------*/
+/***** Chico *****/
+/*---------------*/
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+	padding: 2em;
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico button {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 20% 0 20px 0;
+}
+
+figure.effect-chico button {
+	margin: 0 auto;
+	max-width: 200px;
+	z-index: 100;
+	height: 30px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover button {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+/*\\---------------------------------- DESTINATION ----------------------------------//*/
+
+
+
+/*//---------------------------------- TITLE WRAPPER ----------------------------------\\*/
+.title-wrapper{
+	position: relative;
+	height: 25px;
+	margin: 15px 0;
+}
+.title-wrapper h2{
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 23px;
+	padding: 0 15px;
+	color: #232A31;
+}
+.line-background{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f1b765;
+	border-left: 0;
+	border-right: 0;
+	width: 100%;
+	padding: 2px 0;
+}
+/*\\---------------------------------- TITLE WRAPPER ----------------------------------//*/
+
+
+
+/*\\---------------------------------- REGISTER FORM ----------------------------------//*/
+.form-register{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+.input-control{
+	width: 60%;
+}
+.input-control:last-child{
+	text-align: center;
+}
+.input-area{
+	outline: none;
+	width: 100%;
+	height: 35px;
+	border: 1px solid #404b56;
+	padding: 3px 10px;
+}
+.input-lable{
+	width: 100%;
+	margin: 0;
+}
+.input-tooltip{
+	color: #F01E0B;
+	visibility: hidden;
+	margin-bottom: 0px;
+}
+/*\\---------------------------------- REGISTER FORM ----------------------------------//*/
+
+
+
+/*//---------------------------------- FOOTER ----------------------------------\\*/
+footer{
+	background-color: #232A31;	
+}
+.newletters-wrapper{
+	background-color: #f1b765;
+}
+
+.newletters-wrapper input[type=text]{
+	width: 100%;
+	outline: none;
+	padding: 7px 10px;
+	background-color: transparent;
+	border: 2px solid #F6F6F6;
+	color: #F6F6F6;
+}
+.newletters-wrapper input::placeholder{
+	color: #F6F6F6;	
+}
+
+.newletters-wrapper input[type=text]{
+	padding: 3px 3px;
+}
+
+.footer-wrapper,
+.footer-coppyright{
+	color: #CCCCCC;
+}
+.footer-list{
+	list-style-type: none;
+	border-right: 1.5px solid #404b56;
+}
+.footer-introduction img{
+	width: 110px;
+	padding-top: 10px;
+}
+
+.footer-wrapper div:last-child ul{
+	border: none;
+}
+.footer-list a{
+	color: #CCCCCC;
+}
+
+.footer-coppyright{
+	border-top: 1.5px solid #404b56;
+}
+
+.social-icon img{
+	margin-left: 10px;
+	height: 40%;
+}
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.newletters-wrapper input[type=text]{
+		padding: 5px 5px;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.newletters-wrapper input[type=text]{
+		padding: 7px 7px;
+	}
+	.footer-list a{
+		font-size: 13px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.newletters-wrapper input[type=text]{
+		padding: 9px 9px;
+	}
+}
+/*\\ Extra Wide Screen CSS //*/
+
+/*\\---------------------------------- FOOTER ----------------------------------//*/
+
+
+
+/*\\---------------------------------- LIGHT BOX ----------------------------------//*/
+.light-box{
+	width: 100%;
+	z-index: 1000;
+	height: 100vh;
+	background-color: #232A31;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#btn-close{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#btn-close span{
+	cursor: pointer;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid white;
+	background-color: #4d555e;
+	display: inline-block;
+	transition: .35s;
+}
+#btn-close span:hover{
+	transition: .35s;
+	color: #F01E0B;
+}
+#image-content{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: center;
+}
+/*\\---------------------------------- LIGHT BOX ----------------------------------//*/

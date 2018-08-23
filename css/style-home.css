@@ -1,0 +1,422 @@
+/*//---------------------------------- HEADER ----------------------------------\\*/
+.carousel-wrapper{
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+.carousel-caption-wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 20px;
+	width: 85%;
+}
+.carousel-caption-wrapper h1{
+	font-size: 19px;
+	color: white;
+	font-weight: 600;
+}
+.carousel-caption-wrapper p{
+	color: #CCCCCC;
+	width: 65%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	display: none;
+}
+#camera_wrap{
+	margin: 0!important;
+}
+.camera_pag{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+.camera_pag span{
+	display: none;
+}
+.camera_pag li.cameracurrent{
+	background-color: #f1b765!important;
+}
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.carousel-caption-wrapper h1{
+		font-size: 35px;
+	}
+	.carousel-caption-wrapper p{
+		display: block;
+	}
+	.carousel-indicators{
+		margin: 16px;
+	}
+	.carousel-indicators li{
+		height: 4px;
+		width: 35px;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.carousel-caption-wrapper h1{
+		font-size: 38px;
+	}
+	.carousel-caption-wrapper p{
+		display: block;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.carousel-caption-wrapper h1{
+		font-size: 43px;
+		margin-bottom: 20px;
+	}
+	.carousel-indicators li{
+		width: 40px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.carousel-caption-wrapper{
+		padding-top: 60px;
+	}
+	.carousel-caption-wrapper h1{
+		font-size: 48px;
+	}
+	.carousel-caption-wrapper p{
+		font-size: 18px;
+	}
+}
+
+
+
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- HEADER ----------------------------------//*/
+
+
+/*//---------------------------------- WELLCOME ----------------------------------\\*/
+.about-us-title{
+	border-left: 5px solid #f1b765;
+	padding-left: 10px;
+}
+.wellcome-left-col p{
+	margin-bottom: 5px;
+}
+.wellcome-left-col .btn-transparent{
+	border-color: #191919;
+	color: #191919;
+}
+.wellcome-left-col .btn-transparent:hover{
+	background-color: #191919;
+	color: #CCCCCC;
+}
+[class|="col"] {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0;
+}
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.wellcome-left-col{
+		padding-right: 10px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 10px;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.wellcome-left-col{
+		padding-right: 12px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 15px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.wellcome-left-col{
+		padding-right: 15px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 20px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.wellcome-left-col p{
+		margin-bottom: 25px;
+	}
+}
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- WELLCOME ----------------------------------//*/
+
+
+/*//---------------------------------- FEATURE ----------------------------------\\*/
+.feature-header{
+	width: 100%;
+	text-align: center;
+}
+.feature-header img{
+	width: 40px;
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.feature-wrapper .col-12{
+	margin: 5px 0;
+}
+.feature-wrapper p.text-content{
+	line-height: 30px;
+}
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.feature-header img{
+		width: 45px;
+		margin-right: 10px;
+	}	
+	.feature-wrapper .text-content{
+		padding-right: 7px;
+	}
+	.feature-header{
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.feature-header img{
+		width: 50px;
+	}	
+	.feature-header{
+		margin-bottom: 7px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.feature-header img{
+		width: 55px;
+	}	
+	.feature-header{
+		margin-bottom: 9px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.feature-header img{
+		width: 60px;
+	}	
+}
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- FEATURE ----------------------------------//*/
+
+
+/*//---------------------------------- SERVICES ----------------------------------\\*/
+.services-wrapper .item-overlay{
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: linear-gradient(to top, #753d9d, transparent 30%);
+}
+.services-wrapper .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.services-wrapper .image-box-model{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.services-wrapper .service-row1,
+.services-wrapper .service-row2{
+	justify-content: space-between;
+}
+.services-wrapper .service-item{
+	margin: 7px 0;
+}
+.services-wrapper .service-row1 .service-item{
+	max-width: 48%;
+}
+.see-all-box{
+	background-color: #0E123C;
+	border-radius: 5px;
+	padding: 100px 0;
+	position: relative;
+	cursor: pointer;
+}
+.see-all-box h3{
+	border-bottom: 2px solid white;
+	position: absolute;
+	top: 80%;
+	right: 10%;
+	transition: .5s;
+}
+.see-all-box:hover h3{
+	transition: .5s;
+	right: 40%;
+}
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.services-wrapper .service-row1 .service-item{
+		max-width: 23.5%!important;
+	}
+	.services-wrapper .service-row2 .service-item{
+		max-width: 56.5%;
+	}
+}
+/*\\ Large Tablet CSS //*/
+/*\\---------------------------------- SERVICES ----------------------------------//*/
+
+
+/*//---------------------------------- CONTACT ----------------------------------\\*/
+.contact-wrapper{
+	height: 130px;
+	background-color: #232A31;
+}
+.contact-title{
+	font-size: 15px;
+}
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.contact-title{
+		font-size: 18px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.contact-title{
+		font-size: 20px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.contact-title{
+		font-size: 22px;
+	}
+}
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- CONTACT ----------------------------------//*/
+
+
+/*//---------------------------------- PORTFOLIO ----------------------------------\\*/
+.category-wrapper{
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.category-wrapper li{
+	display: inline-block;
+	background: #707A7E;
+	border-right: 1px solid #9BA8AE;
+	padding: 5px 15px;
+	margin: 0;
+	color: white;
+	width: 14%;
+	cursor: pointer;
+	transition: .35s;
+}
+.category-wrapper li:hover,
+.category-wrapper li.active{
+	background: #232A31;
+	transition: .35s;
+	box-shadow: 0px 0px 5px #888888;
+}
+.category-wrapper li:last-child{
+	border-right: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.category-wrapper li:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;	
+}
+
+/*---------------------ISOTOPE-------------------*/
+.gallery-box{
+	width: 100%;
+}
+.gallery-box ul{
+	list-style: none;
+}
+.gallery-box ul li{
+	display: inline-block;
+	width: 25%;
+	float: left;
+}
+.gallery-box ul li img{
+	width: 100%;
+}
+/*---------------------ISOTOPE-------------------*/
+
+/*// Small Tablet CSS \\*/
+@media (min-width: 576px) {
+	.wellcome-left-col{
+		padding-right: 10px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 10px;
+	}
+	.portfolio-wrapper .portfolio-item{
+		max-width: 32%;
+	}
+}
+/*\\ Small Tablet CSS //*/
+
+/*// Large Tablet CSS \\*/
+@media (min-width: 768px) {
+	.wellcome-left-col{
+		padding-right: 12px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 15px;
+	}
+}
+/*\\ Large Tablet CSS //*/
+
+/*// Wide Screen CSS \\*/
+@media (min-width: 992px) {
+	.wellcome-left-col{
+		padding-right: 15px;
+	}
+	.wellcome-left-col p{
+		margin-bottom: 20px;
+	}
+}
+/*\\ Wide Screen CSS //*/
+
+/*// Extra Wide Screen CSS \\*/
+@media (min-width: 1200px) {
+	.wellcome-left-col p{
+		margin-bottom: 25px;
+	}
+}
+/*\\ Extra Wide Screen CSS //*/
+/*\\---------------------------------- PORTFOLIO ----------------------------------//*/
